@@ -1,0 +1,319 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    background:#050b18;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    background:#08111f;
+    border-bottom:1px solid #0f1f35;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#ffd43b;
+}
+
+.logo span{
+    color:#3776ab;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd43b;
+}
+
+/* =========================
+   BOUTONS
+========================= */
+
+.btn{
+    background:#ffd43b;
+    color:black;
+    padding:12px 22px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    text-decoration:none;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.demo{
+    background:transparent;
+    color:white;
+    border:2px solid white;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:85vh;
+    padding:40px 10%;
+}
+
+.hero-text{
+    max-width:600px;
+}
+
+.hero-text h3{
+    color:#00ff88;
+    margin-bottom:15px;
+}
+
+.hero-text h1{
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+.hero-text h1 span{
+    color:#ffd43b;
+}
+
+.hero-text p{
+    color:#d0d0d0;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+/* =========================
+   IMAGE HACKER
+========================= */
+
+.hero-image{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-image img{
+    width:500px;
+    max-width:100%;
+    border-radius:20px;
+
+    animation:hackerGlow 2s infinite alternate;
+
+    box-shadow:
+    0 0 15px #00ff88,
+    0 0 30px #00ff88,
+    0 0 50px #00ff88;
+}
+
+@keyframes hackerGlow{
+
+    from{
+        transform:scale(1);
+        box-shadow:
+        0 0 10px #00ff88,
+        0 0 20px #00ff88,
+        0 0 40px #00ff88;
+    }
+
+    to{
+        transform:scale(1.03);
+        box-shadow:
+        0 0 20px #00ff88,
+        0 0 40px #00ff88,
+        0 0 80px #00ff88;
+    }
+
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+    background:#08111f;
+    padding:40px 20px;
+}
+
+.stat{
+    text-align:center;
+}
+
+.stat h2{
+    color:#ffd43b;
+    font-size:35px;
+}
+
+.stat p{
+    margin-top:10px;
+    color:#ccc;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#08111f;
+    color:#aaa;
+}
+
+/* =========================
+   VIDEO DEMO
+========================= */
+
+.video{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.video iframe{
+    width:90%;
+    max-width:900px;
+    aspect-ratio:16/9;
+    border:none;
+    border-radius:15px;
+}
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+
+@media(max-width:900px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:45px;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .hero-image img{
+        width:320px;
+        margin-top:30px;
+    }
+
+    .stats{
+        gap:25px;
+    }
+} 
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.card{
+    background:#08111f;
+    padding:30px;
+    width:100%;
+    max-width:450px;
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,255,136,0.2);
+}
+
+.card h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#ffd43b;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.card .btn{
+    width:100%;
+    margin-top:15px;
+}
+
+.card p{
+    text-align:center;
+    margin-top:15px;
+}
+
+.card a{
+    color:#00ff88;
+    text-decoration:none;
+}
+
+.card a:hover{
+    text-decoration:underline;
+}
