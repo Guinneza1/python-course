@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Bienvenue 👋</h1>
+
+<p id="welcome"></p>
+
+<br>
+
+<a class="btn" href="demo.html">Continuer les cours</a>
+
+</div>
+
+<script>
+let user = localStorage.getItem("user");
+document.getElementById("welcome").innerText = "Bonjour " + user;
+</script>
+
+</body>
+</html>
